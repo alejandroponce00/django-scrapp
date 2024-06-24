@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e7e0e0;
+            background-color: #E5E5EB  ;
             box-sizing: border-box;
         }
 
@@ -22,7 +22,7 @@
 
         h1 {
             margin-bottom: 20px;
-            color: rgb(159, 70, 10);
+            color: rgb(81, 65, 222);
             text-align: center;
         }
         input[type='text'] {
@@ -34,10 +34,10 @@
             outline: rgb(144, 73, 25);
             border: 2px solid rgb(159, 70, 10);;
         }
-        input[type='submit'] {
+        button{
             width: 30%;
             border-radius: 5px;
-            background-color: rgb(159, 70, 10);
+            background-color: rgb(148, 148, 148);
             color: white;
             padding: 5px;
             border: 2px solid rgb(159, 70, 10);
@@ -74,13 +74,14 @@
 </head>
 <body>
     <div id="main">
-        <h1>Search For Jumia Products</h1>
+        <h1>Web Scrapping con Django</h1>
         <form method="GET">
             <div>
                 <label for="product"></label>
                 <input type="text" id="product" value="{{request.GET.product}}" placeholder="Search for product" name="product">
             </div>
-            <input type="submit" value="Submit">
+            <button>
+            Buscar</button>
         </form>
        {% if product_info_list %}
         <table class="product-table">
